@@ -182,4 +182,15 @@ public class ConsentController {
         consentRepository.deleteAllByExpiryDateBefore(curdate);
         hipConsentRepository.deleteAllByExpiryDateBefore(curdate);
     }
+//   @PostMapping("/deleteexpiredconsent")
+//     public void removeoldconsents() throws ParseException{
+//         Date date = new Date();
+//         DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
+//         String asISO= dateFormat.format(date);
+//         System.out.println(asISO);
+//         Date curdate = dateFormat.parse(asISO);
+//         System.out.println(curdate);
+//         consentRepository.deleteAllByExpiryDateBefore(curdate);
+//         hipConsentRepository.deleteAllByExpiryDateBefore(curdate);
+//     }
 }
